@@ -218,12 +218,12 @@ label {
 
 .inner-text:hover {
   cursor: pointer;
-  box-shadow: -1px 6.5px 15px rgba(208, 211, 214, 0.75);
+  box-shadow: -1px 6.5px 15px rgba(2, 133, 135, 0.75);
 }
 
 .ic {
   font-size: 35px;
-  color: #EBA675;
+  color: #be03c5;
   transition: all 250ms ease;
 }
 
@@ -239,7 +239,7 @@ label {
 }
 
 .inner-text h5 {
-  color: #6D85A8;
+  color: #06080a;
   letter-spacing: 1.2px;
   text-transform: uppercase;
 }
@@ -338,7 +338,7 @@ ul li p {
   height: 3px;
   margin: 20px auto;
   border: 0;
-  background: #E58859;
+  background: #a20583;
 }
 
 .portafolio-container {
@@ -409,19 +409,44 @@ ul li p {
 }
 
 /* FORMULARIO EN EL FOOTER */
+/* FOOTER */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #354757;
+  color: #FEFFFF;
+  padding: 40px;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+}
+
+.footer h4 {
+  font-size: 36px; /* Tamaño de fuente más grande */
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+.footer p {
+  margin: 5px 0; /* Espaciado entre párrafos */
+  font-size: 18px; /* Tamaño de fuente para los párrafos */
+}
+
+/* FORMULARIO EN EL FOOTER */
 .footer-form {
   display: flex;
-  flex-direction: column; /* Coloca los elementos en columna */
-  align-items: center; /* Centra los elementos horizontalmente */
-  margin-top: 20px; /* Espacio entre el texto y el formulario */
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Ancho completo */
 }
 
 .footer-form input, .footer-form textarea {
-  width: 300px; /* Ancho del formulario */
-  padding: 10px; /* Espaciado interno */
-  margin-bottom: 10px; /* Espacio entre los campos */
+  width: 80%; /* Ancho del formulario */
+  padding: 12px; /* Espaciado interno */
+  margin-bottom: 15px; /* Espacio entre los campos */
   border: none; /* Sin borde */
   border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
 }
 
 .footer-form input {
@@ -434,17 +459,30 @@ ul li p {
 }
 
 .footer-form button {
-  padding: 10px 20px; /* Espaciado interno del botón */
+  padding: 12px 20px; /* Espaciado interno del botón */
   background: #E58859; /* Color de fondo del botón */
   color: white; /* Color del texto */
   border: none; /* Sin borde */
   border-radius: 5px; /* Bordes redondeados */
   cursor: pointer; /* Cambia el cursor al pasar por encima */
   transition: background 0.3s; /* Transición de color */
+  font-size: 16px; /* Tamaño de fuente del botón */
 }
 
 .footer-form button:hover {
   background: #D76B4A; /* Color de fondo al pasar el mouse */
+}
+
+/* Información de contacto */
+.contact-info {
+  margin-top: 20px; /* Espacio entre el formulario y la información de contacto */
+  text-align: center; /* Centrar el texto */
+}
+
+.contact-info p {
+  margin: 5px 0; /* Espaciado entre párrafos */
+  font-size: 16px; /* Tamaño de fuente */
+  color: #D7DADE; /* Color más suave */
 }
 
 /* LOGO */
@@ -467,3 +505,70 @@ ul li p {
 .logo img:hover {
     transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
 }
+.social-media {
+  text-align: center;
+  margin-top: 30px;
+  padding: 30px;
+  background: linear-gradient(135deg, #2c3e50, #354757); /* Degradado de fondo */
+  border-radius: 15px;
+  color: #53b1cd;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* Sombra más pronunciada */
+}
+
+.social-media h4 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 700; /* Aumenté el grosor para más impacto */
+  text-transform: uppercase; /* Mayúsculas para un estilo más audaz */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.icon {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit; 
+  transition: transform 0.3s ease, color 0.3s ease;
+  border-radius: 10px; /* Bordes redondeados en los íconos */
+  overflow: hidden; /* Para que los efectos no sobresalgan */
+}
+
+.icon img {
+  width: 50px;
+  transition: transform 0.3s ease;
+}
+
+.icon span {
+  display: block;
+  font-size: 16px; /* Tamaño de fuente aumentado para mejor legibilidad */
+  margin-top: 8px; /* Espaciado ajustado */
+  font-weight: 500; /* Grosor moderado para el texto */
+}
+
+.icon:hover img {
+  transform: scale(1.1);
+}
+
+.icon:hover {
+  transform: translateY(-5px);
+  color: #db15f1;
+  background: rgba(41, 7, 191, 0.1); /* Fondo sutil en hover */
+  border-radius: 10px; /* Mantiene la redondez */
+}
+
+@media (max-width: 600px) {
+  .social-icons {
+      flex-direction: column;
+  }
+  
+  .icon {
+      margin-bottom: 15px;
+  }
+}
+
